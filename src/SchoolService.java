@@ -1,2 +1,6 @@
-public class SchoolService extends Worker {
+public abstract class  SchoolService extends Worker {
+    @Override
+    public void work() {
+    }
+
 }
