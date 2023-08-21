@@ -16,8 +16,8 @@ public abstract class Teacher extends Worker{
     }
     @Override
     public void work() {
+        super.work();
     }
     public void testStudents(){
-
     }
 }
