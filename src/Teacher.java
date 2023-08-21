@@ -8,12 +8,12 @@ public abstract class Teacher extends Worker{
         super.goToSchool();
         System.out.println("8:00");
     }
-
     @Override
-    public void finishWork() {
-        super.finishWork();
+    public void leaveSchool() {
+        super.leaveSchool();
         System.out.println("15:00");
     }
+
     @Override
     public void work() {
         super.work();
