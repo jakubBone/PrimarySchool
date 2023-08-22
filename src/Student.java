@@ -2,7 +2,7 @@ public class Student extends Person{
 
     String firstLessonAt;
     String lastLessonAt;
-    boolean ifGoodStudent;
+    int examResult;
     int classNumber;
     @Override
     public void goToSchool() {
@@ -24,11 +24,32 @@ public class Student extends Person{
     public void learn(){
         System.out.println("Student is learning");
     }
-    public void passTheExam(){
-        if(ifGoodStudent)
-            System.out.println("Congratulation! You pass!");
-        else
-            System.out.println("Not good... you have to repeat :(");
+    public void passTheExam() {
+        if (classNumber == 6) {
+            System.out.println("Is time to exam!");
+                if (classNumber>= 2){
+                System.out.println("Congratulation! You pass!");
+                switch(examResult){
+                    case 2:
+                        System.out.println("But the result is terrible...");
+                        break;
+                    case 3:
+                        System.out.println("The result is medium. You could be better");
+                        break;
+                    case 4:
+                        System.out.println("Pretty good. Stay on this road. ");
+                        break;
+                    case 5:
+                        System.out.println("Excellent! You are the best :) ");
+                        break;
+                    case 6:
+                        System.out.println("Brilliant, It could't be better!");
+                        break;
+                    }
+                }
+                else
+                    System.out.println("Not good... you have to repeat :(");
+        }
     }
 
 }
