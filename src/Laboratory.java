@@ -14,10 +14,6 @@ public class Laboratory extends ClassRoom {
     @Override
     public void learn() {
         super.learn();
-            System.out.println("Use items from the list:");
-            for(String element: educationItems){
-                System.out.println("- " + element);
-        }
     }
 
     public void makeChemicalSolution(String utensil, String substance1, String substance2 ){

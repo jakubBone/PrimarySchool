@@ -18,5 +18,9 @@ public abstract class ClassRoom extends Place {
             if (limitOfElements == howManyItems)
                 break;
         }
+        System.out.println("Use items from the list:");
+        for(String element: educationItems){
+            System.out.println("- " + element);
+        }
     }
 }
