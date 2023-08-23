@@ -5,10 +5,7 @@ public abstract class ClassRoom extends Place {
     ArrayList<String> educationItems = new ArrayList<>();
 
     public void goToPlace() {
-        System.out.println("Go to " + setCoordinates());
-        if (ifIsInside) {
-            System.out.println("Change your shoes");
-        }
+        super.goToPlace();
     }
     public void learn() {
         int limitOfElements = 0;
