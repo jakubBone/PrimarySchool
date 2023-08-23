@@ -11,13 +11,12 @@ public abstract class ClassRoom extends Place {
         }
     }
     public void learn() {
-        int limitOfElements;
+        int limitOfElements = 0;
         for (String element : educationItems) {
             educationItems.add(element);
             limitOfElements++;
             if (limitOfElements == howManyItems)
                 break;
-
         }
     }
 }
