@@ -1,5 +1,4 @@
 public class Pitch extends Field{
-
     String ball;
 
     @Override
