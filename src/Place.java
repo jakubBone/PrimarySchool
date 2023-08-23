@@ -11,5 +11,5 @@ public abstract class Place {
         if (ifIsInside) {
             System.out.println("Change your shoes");
         }
-
+    }
 }
